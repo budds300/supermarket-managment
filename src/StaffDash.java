@@ -103,7 +103,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 120, 50));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 130, 60));
 
         jButton3.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton3.setText("Clear");
@@ -112,7 +112,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, 130, 50));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 260, 130, 60));
 
         jButton4.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton4.setText("Close");
@@ -121,7 +121,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 450, 140, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 140, 60));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -150,9 +150,10 @@ public class StaffDash extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 580, 760, 280));
 
-        jLabel6.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Sales");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(463, 13, 49, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 190, -1));
 
         jButton5.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton5.setText("Print");
@@ -161,7 +162,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 300, 130, 60));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 430, 130, 60));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/12.jpg"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-970, -1490, -1, -1));
@@ -198,7 +199,7 @@ int productTotal;
         
         
     }//GEN-LAST:event_jTable1MouseClicked
-int i =0;
+int i =1;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String userID=jTextField1.getText();
