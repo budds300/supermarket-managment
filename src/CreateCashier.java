@@ -152,8 +152,8 @@ public class CreateCashier extends javax.swing.JFrame {
         jLabel4.setText("New Staff Members");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/4.jpg"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-590, -160, -1, -1));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/shop-ga3e77aa0f_1280.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-160, 0, 1040, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

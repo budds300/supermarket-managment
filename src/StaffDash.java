@@ -69,32 +69,44 @@ public class StaffDash extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("StaffNo");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 194, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, -1, -1));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 194, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Product ID");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 120, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Item");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 260, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 120, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Quantity");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 110, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Price");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 370, -1, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, 185, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 185, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 320, 185, -1));
-        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 390, 200, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1670, 110, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 120, 185, -1));
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 120, 185, -1));
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1450, 120, 185, -1));
+
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1780, 110, 200, -1));
 
         jButton1.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton1.setText("Bill");
@@ -103,7 +115,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 130, 60));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 240, 130, 60));
 
         jButton3.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton3.setText("Clear");
@@ -112,7 +124,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 260, 130, 60));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 130, 60));
 
         jButton4.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton4.setText("Close");
@@ -121,7 +133,7 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 140, 60));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1530, 210, 140, 60));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -141,19 +153,19 @@ public class StaffDash extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 60, 750, 500));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 890, 500));
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 580, 760, 280));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 380, 770, 480));
 
         jLabel6.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Sales");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 20, 190, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 190, -1));
 
         jButton5.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton5.setText("Print");
@@ -162,13 +174,13 @@ public class StaffDash extends javax.swing.JFrame {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 430, 130, 60));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 220, 130, 60));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/12.jpg"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-970, -1490, -1, -1));
 
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/12.jpg"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/store-g127f49ea5_1920.jpg"))); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
 
         pack();
@@ -186,15 +198,16 @@ public class StaffDash extends javax.swing.JFrame {
               System.out.println(e.getMessage());
           }
     }//GEN-LAST:event_formComponentShown
-int productTotal;
+    int productTotal;
+    int availQty; 
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
         // TODO add your handling code here:
          DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
         int Myindex = jTable1.getSelectedRow();
        
-        jTextField2.setText(model.getValueAt(Myindex, 0).toString());
+         jTextField2.setText(model.getValueAt(Myindex, 0).toString());
         jTextField3.setText(model.getValueAt(Myindex, 1).toString());
-        jTextField4.setText(model.getValueAt(Myindex, 2).toString());
+        availQty= Integer.valueOf(model.getValueAt(Myindex, 2).toString());
         jTextField5.setText(model.getValueAt(Myindex, 3).toString());
         
         
@@ -207,11 +220,17 @@ int i =1;
         String item = jTextField3.getText();
         int quantity = Integer.valueOf(jTextField4.getText());
         int price = Integer.valueOf(jTextField5.getText());
-       
+        int afterSoldQty =availQty-quantity;
         productTotal = price *quantity;
-        if(userID.isEmpty()|| productID.isEmpty() || item.isEmpty())
+        if(userID.isEmpty()|| productID.isEmpty() || item.isEmpty()){
             JOptionPane.showMessageDialog(null,("Fill missing fields"));
+        }
+        else if(availQty<quantity ){
+            JOptionPane.showMessageDialog(null,("Not enough stock"));
+        }
+        
         else{
+            
             try{
             Connection con =ConnectionProvider.getCon();
             Statement st = con.createStatement();
@@ -220,9 +239,11 @@ int i =1;
                 ResultSet rsl=st.executeQuery("select  *from staff where userID='"+userID+"'");
                 if(rsl.next()){
                    st.executeUpdate("insert into sold values('"+userID+"','"+productID+"','"+item+"','"+quantity+"','"+price+"','"+productTotal+"')");
-                   
+                   st.executeUpdate("update products set quantity='"+afterSoldQty+"'where productID='"+productID+"'");
+                   dispose();
+                    new StaffDash().setVisible(true);
                     if(i==1){
-              jTextArea1.setText(jTextArea1.getText()+"=============================== Electronic Sales =========================\n"+"\t  NUM           ITEM            QUANTITY         UNIT PRICE           TOTAL\n"+"\t  "+i+"              "+item+"                "+quantity+"                     "+price+"                 "+productTotal+"\n");  
+              jTextArea1.setText(jTextArea1.getText()+"===================================================== Supermarket  ======================================\n"+"\t  NUM           ITEM            QUANTITY         UNIT PRICE           TOTAL\n"+"\t  "+i+"              "+item+"                "+quantity+"                     "+price+"                 "+productTotal+"\n");  
                     }else{
                jTextArea1.setText(jTextArea1.getText()+"\t  "+i+"              "+item+"                "+quantity+"                     "+price+"                "+productTotal+"\n");  
         }
@@ -265,6 +286,14 @@ int i =1;
         jTextField4.setText("");
         jTextField5.setText("");
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
 
     /**
      * @param args the command line arguments

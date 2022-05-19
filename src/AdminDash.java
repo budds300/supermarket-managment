@@ -45,17 +45,18 @@ public class AdminDash extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe Print", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Welcome to our Electronic Managment System Sales");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, 1010, 53));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Welcome to our Supermarket Managment ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 190, 1050, 53));
 
         jButton1.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        jButton1.setText("Add New Electronics");
+        jButton1.setText("Add New Inventory");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, 199, 49));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 330, 199, 49));
 
         jButton2.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton2.setText("Add New Staff");
@@ -64,7 +65,7 @@ public class AdminDash extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 500, 199, 49));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 480, 210, 49));
 
         jButton4.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton4.setText("View Staff");
@@ -73,7 +74,7 @@ public class AdminDash extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 430, 199, 49));
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 400, 199, 49));
 
         jButton6.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton6.setText("Logout");
@@ -82,7 +83,7 @@ public class AdminDash extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 1010, 106, -1));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 730, 106, -1));
 
         jButton3.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
         jButton3.setText("Reports");
@@ -91,22 +92,22 @@ public class AdminDash extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 640, 199, 47));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 650, 199, 47));
 
         jButton5.setFont(new java.awt.Font("Segoe Print", 1, 14)); // NOI18N
-        jButton5.setText("View Added Electronics");
+        jButton5.setText("View Added Inventory");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, -1, 49));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 560, 210, 49));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/11.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-990, -1490, -1, -1));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/11.jpg"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/beverages-g82094d556_1920.jpg"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,7 +130,7 @@ public class AdminDash extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        new ViewElectronics().setVisible(true);
+        new ViewInventory().setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

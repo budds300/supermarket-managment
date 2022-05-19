@@ -78,8 +78,8 @@ public class ViewStaff extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 653, 300));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/4.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-770, -230, -1, -1));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Project/market-gede36a145_1920.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-410, -50, 1220, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
